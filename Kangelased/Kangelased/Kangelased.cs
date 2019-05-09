@@ -20,7 +20,7 @@ namespace Kangelased
         public string Nimi { get => Nimi; set => Nimi = value; }
         public string Asukoht { get => Asukoht; set => Asukoht = value; }   
 
-        public int Päästa(int Ohustatuid)
+        public virtual int Päästa(int Ohustatuid)
         {
             return (int)Math.Round(Ohustatuid * .95);
         }
